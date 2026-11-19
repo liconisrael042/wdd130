@@ -19,6 +19,9 @@ div {
 .one {
     width: 200px;
     height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .flex {
@@ -34,7 +37,9 @@ div {
 }
 
 .container2 {
-    /* write declarations here */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
 }
 
@@ -44,12 +49,13 @@ div {
 }
 
 .container3 {
-    /* write declarations here */
+    display: grid;
+    grid-template: 1fr 1fr 1fr;
 
 }
 
 .columns-3 {
-    /* write declaration here */
+    grid-column: 1 / 4;
 
 }
 

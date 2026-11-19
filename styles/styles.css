@@ -10,32 +10,53 @@
     padding: 0;
 }
 
+a {
+    color: rgb(3, 3, 109);
+}
+
+header,
+.grid,
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: #042849;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+h1 {
+    border-bottom: 1px solid #222;
+    color: darkblue;
 }
 
 main {
-    max-width: 840px;
+    max-width: 50rem;
+    grid-column: 2 / 3;
+    margin: 1rem 0;
 }
 
 main img {
-    width: 180px;
+    width: 10rem;
     height: var(--height);
     border: var(--border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
-}
-
-h1 {
-    color: darkblue;
+    margin: 1rem 0 1rem 1rem;
 }
 
 img {
@@ -47,17 +68,18 @@ img {
 }
 
 p {
-    padding: 0;
+    padding: 1rem;
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
+    max-width: 30rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #333;
     position: relative;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 aside img {
@@ -74,16 +96,31 @@ aside h2 {
 }
 
 footer {
-    margin-top: 15rem;
+    background-color: #3e3e3e;
+    color: #fff;
+
     border-top: 2px solid #000;
     text-align: var(--text-align);
+    padding: 2rem 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 1rem;
 }
 
 /* Class Selectors */
 .box {
     border: 1px solid #b71234;
     padding: 1rem;
-    margin: 1rem;
     background-color: #cccaca;
     color: #1a044e;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
