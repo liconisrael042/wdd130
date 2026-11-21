@@ -113,15 +113,27 @@ article {
     box-shadow: var(--accent1-color);
 }
 
-.history {
+.history-content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr auto 1fr;
+    /* Equal left/right text columns, auto-sized center image */
     align-items: center;
-    justify-content: center;
+    /* Vertically centers the text blocks with the image */
+    justify-items: center;
+    /* Horizontally centers each element in its column */
+    gap: 2rem;
+    /* Creates even spacing between text and image */
+    padding: 1rem 2rem;
 }
 
-.title {
-    grid-column: 1/4;
+.history-content img {
+    display: block;
+    width: 220px;
+    height: auto;
+}
+
+.history-content p {
+    margin: 0;
 }
 
 .adventure-gallery {
