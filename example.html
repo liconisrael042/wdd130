@@ -23,6 +23,65 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis minus facilis nam expedita nihil exercitationem. Sequi, hic, id labore dicta deleniti nesciunt provident tenetur quod et nisi illo dolor!</p>
         </div>
     </div>
+
+    <table>
+        <tr>
+            <th>Student</th>
+            <th>Course</th>
+            <th>Term</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Sarah</td>
+            <td>Web Design</td>
+            <td>Fall</td>
+        </tr>
+        <tr>
+            <td>Web Design</td>
+            <td>Spring</td>
+        </tr>
+        <tr>
+            <td>David</td>
+            <td>Programming</td>
+            <td>Fall</td>
+        </tr>
+    </table>
+
+    <form action="">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <button type="submit">Submit</button>
+    </form>
+
+    <form>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <label><input type="checkbox" id="newsletter" name="newsletter"> Send me updates</label>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <fieldset>
+        <legend>Preferred Contact Method</legend>
+        <label><input type="radio" name="contact" value="email"> Email</label>
+        <label><input type="radio" name="contact" value="phone"> Phone</label>
+    </fieldset>
+
+    <form>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+
+        <button type="submit">Submit Contact Information</button>
+    </form>
 </body>
 
 </html>
