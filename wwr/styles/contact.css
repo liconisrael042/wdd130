@@ -65,7 +65,16 @@ article {
 .hero {
     position: relative;
     text-align: center;
-    padding: 0.5px 10px 10px 10px;
+    padding: 0 10px 10px 10px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    color: #000000;
+}
+
+.subheading {
+    padding: 90px 0 0 0;
 }
 
 h1 {
@@ -73,7 +82,7 @@ h1 {
     width: 100%;
     padding: 4px;
     text-align: center;
-    color: #3e3e3e;
+    color: #ffffff;
 }
 
 .information iframe {
@@ -206,7 +215,7 @@ h1 {
 section h2 {
     text-align: center;
     padding: 8px;
-    color: #3f3f3f;
+    color: #ffffff;
 }
 
 footer {
