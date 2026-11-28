@@ -86,12 +86,6 @@ h1 {
     grid-template-columns: 1fr 1fr;
 }
 
-.input form label {
-    display: flex;
-    justify-content: flex-start;
-    padding: 10px;
-}
-
 .input {
     display: flex;
     flex-direction: column;
