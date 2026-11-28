@@ -120,11 +120,21 @@ h1 {
     width: 307px;
 }
 
-.input .form-column {
-    display: grid;
-    grid-template-columns: 1fr;
+.message-purpose {
+    display: flex;
     gap: 12px;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.message {
+    flex: 0 0 95px;
+}
+
+.input .form-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
 }
 
 .input fieldset {
@@ -192,7 +202,7 @@ h1 {
 
 .employee-gallery img {
     width: 150px;
-    height: 180px;
+    height: 175px;
     align-items: center;
     margin-top: 1.5rem;
     object-fit: cover;
